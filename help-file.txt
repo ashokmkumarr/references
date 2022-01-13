@@ -1,0 +1,16 @@
+Notes/Help files:
+
+To run a particular file present in the github repo:
+Step 1: Get the raw link of that file by going to the github repo and get the raw link of the file.
+Step 2: Use the raw link of the file and execute "run command" based on the file type
+        Eg: if file type is shell -- command is "sh", if python file --> "python/python3"
+        
+Sample:
+The "helloworld.sh" file has the below contents.
+$ curl -s https://raw.githubusercontent.com/ashokmkumarr/bininstalls/main/helloworld.sh
+#!/bin/bash
+echo "Hello, world"
+
+To run the helloworld.sh file, execute:
+$ curl -s https://raw.githubusercontent.com/ashokmkumarr/bininstalls/main/helloworld.sh | sh
+Hello, world
