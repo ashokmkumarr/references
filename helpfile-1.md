@@ -1,5 +1,5 @@
 *What is /dev/null 2>&1?*
-Refer: [link][https://stackoverflow.com/questions/10508843/what-is-dev-null-21#:~:text=2%3E%261%20redirects%20standard%20error%20to%20standard%20output.,that%20to%20%2Fdev%2Fnull%20.]
+Refer: [link](https://stackoverflow.com/questions/10508843/what-is-dev-null-21#:~:text=2%3E%261%20redirects%20standard%20error%20to%20standard%20output.,that%20to%20%2Fdev%2Fnull%20.)
 
 
 Let's break `>> /dev/null 2>&1` statement into parts:
@@ -48,4 +48,4 @@ $ ls -l file_doesnot_exists > /dev/null 2>&1
 [1]: https://en.wikipedia.org/wiki/Device_file#Pseudo-devices
 [2]: https://unix.stackexchange.com/questions/60034/what-are-character-special-and-block-special-files-in-a-unix-system
 [3]: https://en.wikipedia.org/wiki/Device_file#Pseudo-devices
----------------------------------------------------------------------------------------------------------------
+
