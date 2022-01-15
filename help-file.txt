@@ -20,3 +20,27 @@ $ curl -s https://raw.githubusercontent.com/ashokmkumarr/bininstalls/main/hellow
 Hello, world
 Arguments present arg1 arg2 arg3
 
+Does not wait for the user the enter "q" to quit - useful when used in bash scripting
+ubuntu@ip-192-168-0-88:~$ sudo systemctl status docker --no-pager -l
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-01-12 04:17:17 UTC; 3 days ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 43709 (dockerd)
+      Tasks: 17
+     Memory: 1.1G
+     CGroup: /system.slice/docker.service
+             └─43709 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jan 12 04:17:17 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T04:17:17.678042457Z" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Jan 12 04:17:17 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T04:17:17.678227807Z" level=info msg="Loading containers: start."
+Jan 12 04:17:17 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T04:17:17.755176998Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Jan 12 04:17:17 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T04:17:17.788779400Z" level=info msg="Loading containers: done."
+Jan 12 04:17:17 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T04:17:17.807155265Z" level=info msg="Docker daemon" commit=459d0df graphdriver(s)=overlay2 version=20.10.12
+Jan 12 04:17:17 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T04:17:17.807234098Z" level=info msg="Daemon has completed initialization"
+Jan 12 04:17:17 ip-192-168-0-88 systemd[1]: Started Docker Application Container Engine.
+Jan 12 04:17:17 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T04:17:17.824652989Z" level=info msg="API listen on /run/docker.sock"
+Jan 12 05:08:55 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T05:08:55.879248761Z" level=info msg="ignoring event" container=7a6b0b796e2b80108a7c886fd2f9c304858427acba2b75288d8edcaeffc1ae37 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jan 12 05:08:58 ip-192-168-0-88 dockerd[43709]: time="2022-01-12T05:08:58.403457228Z" level=info msg="ignoring event" container=adb92ff308b02519a90d25de5bb506a54eca3f76b1f86df8c2a76b46fae977b0 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ubuntu@ip-192-168-0-88:~$
