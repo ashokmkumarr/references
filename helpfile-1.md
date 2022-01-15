@@ -41,8 +41,9 @@ For the above command, no output was printed in the terminal, but what if this c
 $ ls -l file_doesnot_exists > /dev/null
 ls: cannot access file_doesnot_exists: No such file or directory
 Despite I'm redirecting output to /dev/null, it is printed in the terminal. It is because we are not redirecting error output to /dev/null, so in order to redirect error output as well, it is required to add 2>&1:
-
+```
 $ ls -l file_doesnot_exists > /dev/null 2>&1
+```
 
 [0]: https://unix.stackexchange.com/questions/89386/what-is-symbol-and-in-unix-linux
 [1]: https://en.wikipedia.org/wiki/Device_file#Pseudo-devices
