@@ -1,6 +1,5 @@
----------------------------------------------------------------------------------------------------------------
-What is /dev/null 2>&1?
-Refer: https://stackoverflow.com/questions/10508843/what-is-dev-null-21#:~:text=2%3E%261%20redirects%20standard%20error%20to%20standard%20output.,that%20to%20%2Fdev%2Fnull%20.
+*What is /dev/null 2>&1?*
+Refer: [link][https://stackoverflow.com/questions/10508843/what-is-dev-null-21#:~:text=2%3E%261%20redirects%20standard%20error%20to%20standard%20output.,that%20to%20%2Fdev%2Fnull%20.]
 
 
 Let's break `>> /dev/null 2>&1` statement into parts:
