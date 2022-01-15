@@ -14,3 +14,8 @@ echo "Hello, world"
 To run the helloworld.sh file, execute:
 $ curl -s https://raw.githubusercontent.com/ashokmkumarr/bininstalls/main/helloworld.sh | sh
 Hello, world
+
+To run with command line arguments, execute:
+$ curl -s https://raw.githubusercontent.com/ashokmkumarr/bininstalls/main/helloworld.sh | sh -s -- arg1 arg2 arg3
+Hello, world
+Arguments present arg1 arg2 arg3
